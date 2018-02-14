@@ -4520,7 +4520,7 @@ static int8_t config_int_out_ctrl(const struct bmi160_int_settg *int_config, con
 			temp = data & ~BMI160_INT1_EDGE_CTRL_MASK;
 			data = temp | ((intr_pin_sett->edge_ctrl) & BMI160_INT1_EDGE_CTRL_MASK);
 
-		} else {
+		} else if (int_config->int_channel == BMI160_INT_CHANNEL_2){
 			/* Configuring channel 2 */
 			/* Output enable */
 			temp = data & ~BMI160_INT2_OUTPUT_EN_MASK;
