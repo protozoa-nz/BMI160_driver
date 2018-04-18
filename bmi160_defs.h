@@ -843,6 +843,13 @@ struct bmi160_sensor_data {
 	/*! Z-axis sensor data */
 	int16_t z;
 	/*! sensor time */
+	/*! X-axis sensor data */
+	int16_t gyro_x;
+	/*! Y-axis sensor data */
+	int16_t gyro_y;
+	/*! Z-axis sensor data */
+	int16_t gyro_z;
+
 	uint32_t sensortime;
 };
 
